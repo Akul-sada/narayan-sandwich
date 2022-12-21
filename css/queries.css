@@ -1,0 +1,47 @@
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+    html {
+      /* 9px / 16px  */
+      font-size: 56.25%;
+    }
+  
+    .grid {
+      column-gap: 4.8rem;
+      row-gap: 6.4rem;
+    }
+    .header {
+      padding: 0 3.2rem;
+    }
+  
+    .main-nav-list {
+      gap: 3.2rem;
+    }
+  
+    .hero {
+      gap: 4.8rem;
+    }
+  
+    .testimonials-container {
+      padding: 9.6rem 3.2rem;
+    }
+  }
+
+/**************************/
+/* BELOW 806px (Tablets) */
+/**************************/
+
+@media (max-width: 50em) {
+    html {
+      /* 8px / 16px = 0.5 = 50% */
+      font-size: 50%;
+    }
+    body{
+        background-color: red;
+    }
+
+    /* MOBILE NAVIGATION */
+    
+}
