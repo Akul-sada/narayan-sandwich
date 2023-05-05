@@ -41,7 +41,11 @@
     body{
         background-color: red;
     }
+    
 
     /* MOBILE NAVIGATION */
     
+}
+@media (max-width: 25em) {
+  
 }
