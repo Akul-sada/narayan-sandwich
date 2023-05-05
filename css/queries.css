@@ -31,6 +31,9 @@
     .hero--video{
       width: 100vw;
     }
+    .pad-top{
+      padding-top: 30px;
+    }
   }
 
 /**************************/
