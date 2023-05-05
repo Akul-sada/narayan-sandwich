@@ -1,3 +1,7 @@
+
+@font-face {
+  font-family: 'Kruti Dev';
+  src: url('../Kruti-Dev-013.ttf') format('truetype')}
 /**************************/
 /* HEADER */
 /**************************/
@@ -91,3 +95,48 @@
 }
 
 /* Heros Section */
+.section-hero{
+  display: flex;
+  background-color: #cf711f;
+}
+@font-face {
+  font-family: 'Kruti Dev';
+  src: url('../KRDEV060-BOLD.TTF') format('truetype')
+}
+.text-container-hero {
+  font-family: Kruti Dev !important;
+  font-size: 4rem ;
+  background: linear-gradient(#cf711f,#FF6F91);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.3rem;
+  color:#fff;
+}
+.text-container-cta{
+  font-family: Kruti Dev !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.font-4rem{
+  font-size: 4rem ;
+}
+.font-2rem {
+  font-size:2.5rem !important;
+}
+section.cta{
+  font-family: Kruti Dev !important;
+}
+.btn-cta:visited,.btn-cta:active,.btn-cta{
+  margin-top: 1rem;
+  width: 30rem;
+  color: #fff;
+  background: #cf711f;
+  padding: 1.5rem 3rem;
+  font-family: sans-serif;
+  text-align: center;
+}
