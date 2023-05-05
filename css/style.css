@@ -100,9 +100,7 @@
   background-color: #cf711f;
   flex-wrap: wrap;
 }
-.hero--video{
-  max-width: 100vw;
-}
+
 
 .text-container-hero {
   font-family: Kruti Dev !important;
