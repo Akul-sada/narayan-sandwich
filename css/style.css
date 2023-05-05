@@ -1,7 +1,8 @@
 
 @font-face {
   font-family: 'Kruti Dev';
-  src: url('../Kruti-Dev-013.ttf') format('truetype')}
+  src: url('../Kruti-Dev-013.ttf') format('truetype');
+}
 /**************************/
 /* HEADER */
 /**************************/
@@ -100,12 +101,15 @@
   background-color: #cf711f;
   flex-wrap: wrap;
 }
+.hero--video{
+  width: 100vw;
+}
 
 
 .text-container-hero {
   font-family: Kruti Dev !important;
   font-size: 4rem ;
-  background: linear-gradient(#cf711f,#FF6F91);
+  background: linear-gradient(#de883d,#FF6F91);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +135,7 @@
 section.cta{
   font-family: Kruti Dev !important;
 }
+
 .btn-cta:visited,.btn-cta:active,.btn-cta{
   margin-top: 1rem;
   width: 30rem;
