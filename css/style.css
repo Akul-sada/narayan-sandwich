@@ -98,7 +98,6 @@
 /* Heros Section */
 .section-hero{
   display: flex;
-  background-color: #cf711f;
   flex-wrap: wrap;
 }
 .hero--video{
@@ -107,15 +106,16 @@
 
 
 .text-container-hero {
+  width: 100%;
   font-family: Kruti Dev !important;
   font-size: 4rem ;
-  background: linear-gradient(#de883d,#FF6F91);
+  background: linear-gradient(#fdf2e9,#f1bbc8);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 2.3rem;
-  color:#fff;
+  color:#444;
 }
 .text-container-cta{
   font-family: Kruti Dev !important;
