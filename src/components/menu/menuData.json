@@ -1,0 +1,187 @@
+{
+  "menu": [
+    {
+      "category": "sandwiches",
+      "items": [
+        {"id": 1, "type": "Bread Butter", "price": "25.00"},
+        {"id": 2, "type": "Bread Butter Toast", "price": "30.00"},
+        {"id": 3, "type": "Bread Butter Cheese", "price": "55.00"},
+        {"id": 4, "type": "Aloo Slice", "price": "35.00"},
+        {"id": 5, "type": "Aloo Toast", "price": "40.00"},
+        {"id": 6, "type": "Aloo Cheese Toast", "price": "40.00"},
+        {"id": 7, "type": "Veg Sandwich", "price": "40.00"},
+        {"id": 8, "type": "Veg Cheese Sandwich", "price": "70.00"},
+        {"id": 9, "type": "Veg Toast", "price": "60.00"},
+        {"id": 10, "type": "Veg Cheese Toast", "price": "90.00"},
+        {"id": 11, "type": "Masala Toast", "price": "50.00"},
+        {"id": 12, "type": "Masala Cheese Toast", "price": "80.00"},
+        {"id": 13, "type": "Paneer Masala Toast", "price": "85.00"},
+        {"id": 14, "type": "Paneer Masala Cheese Toast", "price": "85.00"},
+        {"id": 15, "type": "Chilly Cheese Toast", "price": "90.00"},
+        {"id": 16, "type": "Garlic Masala Toast", "price": "65.00"},
+        {"id": 17, "type": "Garlic Masala Cheese Toast", "price": "95.00"},
+        {"id": 18, "type": "Mayonnaise Sandwich", "price": "85.00"},
+        {"id": 19, "type": "Mayonnaise Cheese Sandwich", "price": "95.00"},
+        {"id": 20, "type": "Mayonnaise Toast Sandwich", "price": "95.00"},
+        {"id": 21, "type": "Mayonnaise Cheese Toast", "price": "110.00"},
+        {"id": 22, "type": "Club Sandwich", "price": "65.00"},
+        {"id": 23, "type": "Club Toast", "price": "75.00"},
+        {"id": 24, "type": "Club Cheese Sandwich", "price": "85.00"},
+        {"id": 25, "type": "Club Cheese Toast", "price": "100.00"},
+        {"id": 26, "type": "Garlic Cheese Bread", "price": "110.00"},
+        {"id": 27, "type": "Tandoori Mayo Toast", "price": "100.00"},
+        {"id": 28, "type": "Tandoori Mayo Cheese Toast", "price": "120.00"},
+        {"id": 29, "type": "Tandoori Mayo Paneer Toast", "price": "110.00"},
+        {"id": 30, "type": "Tandoori Mayo Paneer Cheese Toast", "price": "130.00"},
+        {"id": 31, "type": "Amul Butter Extra", "price": "20.00"}
+      ]
+    },
+    {
+      "category": "grilled sandwiches",
+      "items": [
+        {"id": 32, "type": "Veg. Grill", "price": "130.00"},
+        {"id": 33, "type": "Veg. Cheese Grill", "price": "150.00"},
+        {"id": 34, "type": "Paneer Grill", "price": "160.00"},
+        {"id": 35, "type": "Paneer Cheese", "price": "180.00"},
+        {"id": 36, "type": "Masala Grill", "price": "140.00"},
+        {"id": 37, "type": "Masala Cheese Grill", "price": "160.00"},
+        {"id": 38, "type": "Masala Paneer Cheese Grill", "price": "200.00"},
+        {"id": 39, "type": "Paneer Masala Grill", "price": "190.00"},
+        {"id": 40, "type": "Mayonnaise Grill", "price": "170.00"},
+        {"id": 41, "type": "Mayonnaise Cheese Grill", "price": "180.00"},
+        {"id": 42, "type": "Mayonnaise Paneer Cheese Grill", "price": "210.00"},
+        {"id": 43, "type": "Chilly Cheese Grill", "price": "180.00"},
+        {"id": 44, "type": "Tandoori Mayo Grill", "price": "180.00"},
+        {"id": 45, "type": "Tandoori Mayo Cheese Grill", "price": "190.00"},
+        {"id": 46, "type": "Tandoori Mayo Paneer Grill", "price": "220.00"},
+        {"id": 47, "type": "Tandoori Mayo Paneer Cheese Grill", "price": "230.00"},
+        {"id": 48, "type": "Amul Butter Extra", "price": "50.00"}
+      ]
+    },
+    {
+      "category": "jam sandwich",
+      "items": [
+        {"id": 49, "type": "Jam Sandwich", "price": "35.00"},
+        {"id": 50, "type": "Jam Toast Sandwich", "price": "40.00"},
+        {"id": 51, "type": "Jam Cheese Sandwich", "price": "55.00"},
+        {"id": 52, "type": "Jam Cheese Toast", "price": "65.00"}
+      ]
+    },
+    {
+      "category": "sweet bites",
+      "items": [
+        {"id": 53, "type": "Chocolate Sandwich", "price": "50.00"},
+        {"id": 54, "type": "Chocolate Cheese Sandwich", "price": "70.00"},
+        {"id": 55, "type": "Chocolate Toasted Sandwich", "price": "60.00"},
+        {"id": 56, "type": "Chocolate Cheese Toasted Sandwich", "price": "80.00"}
+      ]
+    },
+    {
+      "category": "panini",
+      "items": [
+        {"id": 57, "type": "Regular Panini", "price": "90.00"},
+        {"id": 58, "type": "Regular Cheese Panini", "price": "130.00"},
+        {"id": 59, "type": "Cottage Panini", "price": "130.00"},
+        {"id": 60, "type": "Fajita Panini", "price": "140.00"},
+        {"id": 61, "type": "Hot Pan Panini", "price": "140.00"},
+        {"id": 62, "type": "Maxican Panini", "price": "140.00"},
+        {"id": 63, "type": "Curry Potato Panini", "price": "140.00"},
+        {"id": 64, "type": "Panini Garlic Bread", "price": "90.00"},
+        {"id": 65, "type": "Panini Cheese Garlic Bread", "price": "130.00"},
+        {"id": 66, "type": "Cheese Instant Garlic Bread", "price": "140.00"},
+        {"id": 67, "type": "Tandoori Mayo Panini", "price": "150.00"}
+      ]
+    },
+    {
+      "category": "roll",
+      "items": [
+        {"id": 68, "type": "Veg Roll", "price": "70.00"},
+        {"id": 69, "type": "Veg Cheese Roll", "price": "90.00"},
+        {"id": 70, "type": "Veg Paneer Roll", "price": "90.00"},
+        {"id": 71, "type": "Veg Paneer Cheese Roll", "price": "100.00"},
+        {"id": 72, "type": "Veg Schezwan Roll", "price": "70.00"},
+        {"id": 73, "type": "Schezwan Cheese Roll", "price": "95.00"},
+        {"id": 74, "type": "Schezwan Paneer Cheese Roll", "price": "110.00"},
+        {"id": 75, "type": "Mayonaise Roll", "price": "80.00"},
+        {"id": 76, "type": "Mayonaise Cheese Roll", "price": "100.00"},
+        {"id": 77, "type": "Mayonaise Paneer Roll", "price": "100.00"},
+        {"id": 78, "type": "Mayonaise Paneer Cheese Roll", "price": "120.00"},
+        {"id": 79, "type": "Tandoori Mayo Veg Roll", "price": "90.00"},
+        {"id": 80, "type": "Tandoori Mayo Cheese Roll", "price": "110.00"},
+        {"id": 81, "type": "Tandoori Mayo Paneer Roll", "price": "110.00"},
+        {"id": 82, "type": "Tandoori Mayo Cheese Paneer Roll", "price": "130.00"}
+      ]
+    },
+    {
+      "category": "franky",
+      "items": [
+        {"id": 83, "type": "Veg Franky", "price": "40.00"},
+        {"id": 84, "type": "Cheese Franky", "price": "70.00"},
+        {"id": 85, "type": "Paneer Franky", "price": "70.00"},
+        {"id": 86, "type": "Paneer Cheese Franky", "price": "80.00"},
+        {"id": 87, "type": "Schezwan Franky", "price": "45.00"},
+        {"id": 88, "type": "Schezwan Cheese Franky", "price": "75.00"},
+        {"id": 89, "type": "Schezwan Paneer Franky", "price": "75.00"},
+        {"id": 90, "type": "Schezwan Paneer Cheese Franky", "price": "85.00"},
+        {"id": 91, "type": "Chinese Franky", "price": "50.00"},
+        {"id": 92, "type": "Chinese Schezwan Franky", "price": "55.00"},
+        {"id": 93, "type": "Chinese Cheese Franky", "price": "75.00"},
+        {"id": 94, "type": "Chinese Paneer Franky", "price": "75.00"},
+        {"id": 95, "type": "Chinese Paneer Cheese Franky", "price": "90.00"},
+        {"id": 96, "type": "Mayonaise Veg Franky", "price": "60.00"},
+        {"id": 97, "type": "Mayonaise Paneer Franky", "price": "80.00"},
+        {"id": 98, "type": "Mayonaise Paneer Cheese Franky", "price": "100.00"},
+        {"id": 99, "type": "Mayonaise Chinese Franky", "price": "75.00"},
+        {"id": 100, "type": "Mayonaise Cheese Chinese Franky", "price": "90.00"},
+        {"id": 101, "type": "Mayonaise Cheese Paneer Franky", "price": "90.00"},
+        {"id": 102, "type": "Mayonaise Chinese Paneer Cheese Franky", "price": "100.00"},
+        {"id": 103, "type": "Paneer Chilly Franky", "price": "75.00"},
+        {"id": 104, "type": "Paneer Chilly Cheese Franky", "price": "90.00"},
+        {"id": 105, "type": "Tandoori Mayo Franky", "price": "80.00"},
+        {"id": 106, "type": "Tandoori Mayo Cheese Franky", "price": "90.00"},
+        {"id": 107, "type": "Tandoori Mayo Paneer Franky", "price": "90.00"},
+        {"id": 108, "type": "Tandoori Mayo Cheese Paneer Franky", "price": "100.00"}
+      ]
+    },
+    {
+      "category": "bhel",
+      "items": [
+        {"id": 109, "type": "Chinese Bhel", "price": "35.00"},
+        {"id": 110, "type": "Chinese Cheese Bhel", "price": "45.00"},
+        {"id": 111, "type": "Chinese Schezwan Bhel", "price": "40.00"},
+        {"id": 112, "type": "Chinese Paneer Bhel", "price": "45.00"},
+        {"id": 113, "type": "Chinese Schezwan Cheese Bhel", "price": "50.00"},
+        {"id": 114, "type": "Chinese Schezwan Paneer Bhel", "price": "50.00"},
+        {"id": 115, "type": "Chinese Paneer Cheese Bhel", "price": "55.00"},
+        {"id": 116, "type": "Chinese Paneer Cheese Schezwan Bhel", "price": "65.00"}
+      ]
+    },
+    {
+      "category": "burger",
+      "items": [
+        {"id": 117, "type": "Veg Burger", "price": "50.00"},
+        {"id": 118, "type": "Veg Cheese Burger", "price": "75.00"},
+        {"id": 119, "type": "Veg Paneer Burger", "price": "75.00"},
+        {"id": 120, "type": "Veg Paneer Cheese Burger", "price": "90.00"},
+        {"id": 121, "type": "Mayonnaise Burger", "price": "70.00"},
+        {"id": 122, "type": "Mayonnaise Cheese Burger", "price": "85.00"},
+        {"id": 123, "type": "Mayonnaise Cheese Paneer Burger", "price": "95.00"},
+        {"id": 124, "type": "Tandoori Mayo Burger", "price": "80.00"},
+        {"id": 125, "type": "Tandoori Mayo Cheese Burger", "price": "90.00"},
+        {"id": 126, "type": "Tandoori Mayo Paneer Burger", "price": "100.00"},
+        {"id": 127, "type": "Tandoori Mayo Paneer Cheese Burger", "price": "110.00"}
+      ]
+    },
+    {
+      "category": "pizza",
+      "items": [
+        {"id": 128, "type": "Veg. Cheese Pizza", "price": "150.00"},
+        {"id": 129, "type": "Veg. Paneer Cheese Pizza", "price": "170.00"},
+        {"id": 130, "type": "Mayonnaise Pizza", "price": "170.00"},
+        {"id": 131, "type": "Mayo Paneer Cheese Pizza", "price": "180.00"},
+        {"id": 132, "type": "Tandoori Cheese Pizza", "price": "180.00"},
+        {"id": 133, "type": "Tandoori Paneer Cheese Pizza", "price": "200.00"}
+      ]
+    }
+  ]
+}
