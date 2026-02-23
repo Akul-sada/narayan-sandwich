@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useCart } from './CartContext';
 
 // Owner's WhatsApp number (should be in environment variables in production)
-const OWNER_PHONE_NUMBER = process.env.REACT_APP_OWNER_PHONE || '911234567890';
+const OWNER_PHONE_NUMBER = process.env.REACT_APP_OWNER_PHONE || '919629581395';
 
 function CheckoutModal({ isOpen, onClose }) {
   const { cartState, updateCustomerInfo, clearCart, sendOrderToWhatsApp } = useCart();
@@ -73,7 +73,7 @@ function CheckoutModal({ isOpen, onClose }) {
   const calculateTotal = () => {
     const subtotal = cartState.totalAmount;
     const tax = subtotal * 0.05;
-    const delivery = subtotal > 200 ? 0 : 20;
+    const delivery = 20;
     return (subtotal + tax + delivery).toFixed(2);
   };
 

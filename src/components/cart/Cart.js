@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { 
-  FaShoppingCart, 
-  FaTrash, 
-  FaPlus, 
-  FaMinus, 
+import {
+  FaShoppingCart,
+  FaTrash,
+  FaPlus,
+  FaMinus,
   FaArrowRight,
   FaUser,
   FaWhatsapp
@@ -22,7 +22,7 @@ const Cart = () => {
   const handleQuantityChange = (itemId, delta) => {
     const currentItem = cart.items.find(item => item._id === itemId);
     if (!currentItem) return;
-    
+
     const newQuantity = currentItem.quantity + delta;
     if (newQuantity > 0) {
       updateQuantity(itemId, newQuantity);
@@ -39,11 +39,11 @@ const Cart = () => {
     }
 
     setIsCheckingOut(true);
-    
+
     try {
       // Sync guest cart if needed
       await syncGuestCart();
-      
+
       // Navigate to checkout
       navigate('/checkout');
     } catch (error) {
@@ -62,7 +62,7 @@ const Cart = () => {
     // Format message for WhatsApp
     const phoneNumber = process.env.REACT_APP_OWNER_PHONE || '911234567890';
     let message = `*New Order Request*%0A%0A`;
-    
+
     // Customer info
     if (user) {
       message += `*Customer:* ${user.name || 'Guest'}%0A`;
@@ -70,17 +70,17 @@ const Cart = () => {
     } else {
       message += `*Customer:* Guest%0A`;
     }
-    
+
     // Items
     message += `%0A*Order Items:*%0A`;
     cart.items.forEach((item, index) => {
       message += `${index + 1}. ${item.name} x${item.quantity} - ₹${(item.price * item.quantity).toFixed(2)}%0A`;
     });
-    
+
     // Total
     message += `%0A*Total:* ₹${cart.grandTotal.toFixed(2)}%0A`;
     message += `%0A_Please confirm this order._`;
-    
+
     // Encode and open WhatsApp
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
@@ -94,7 +94,7 @@ const Cart = () => {
         </div>
         <h3>Your cart is empty</h3>
         <p>Add delicious items from our menu</p>
-        <button 
+        <button
           className="browse-menu-btn"
           onClick={() => navigate('/')}
         >
@@ -114,8 +114,8 @@ const Cart = () => {
           </h2>
           <span className="cart-count-badge">{cart.totalItems} items</span>
         </div>
-        
-        <button 
+
+        <button
           className="clear-cart-btn"
           onClick={clearCart}
           disabled={cart.items.length === 0}
@@ -131,7 +131,7 @@ const Cart = () => {
             <div className="cart-item-info">
               <h4 className="item-name">{item.name}</h4>
               <p className="item-price-per">₹{item.price.toFixed(2)} each</p>
-              
+
               {item.specialInstructions && (
                 <p className="special-instructions">
                   <span className="instructions-label">Note: </span>
@@ -142,28 +142,28 @@ const Cart = () => {
 
             <div className="cart-item-controls">
               <div className="quantity-controls">
-                <button 
+                <button
                   className="qty-btn minus"
                   onClick={() => handleQuantityChange(item._id, -1)}
                 >
                   <FaMinus />
                 </button>
-                
+
                 <span className="quantity">{item.quantity}</span>
-                
-                <button 
+
+                <button
                   className="qty-btn plus"
                   onClick={() => handleQuantityChange(item._id, 1)}
                 >
                   <FaPlus />
                 </button>
               </div>
-              
+
               <div className="item-total">
                 ₹{(item.price * item.quantity).toFixed(2)}
               </div>
-              
-              <button 
+
+              <button
                 className="remove-item-btn"
                 onClick={() => removeFromCart(item._id)}
                 title="Remove item"
@@ -181,28 +181,30 @@ const Cart = () => {
             <span className="summary-label">Subtotal</span>
             <span className="summary-value">₹{cart.totalAmount.toFixed(2)}</span>
           </div>
-          
+
           <div className="summary-row">
             <span className="summary-label">GST (5%)</span>
             <span className="summary-value">₹{cart.taxAmount.toFixed(2)}</span>
           </div>
-          
+
           <div className="summary-row">
             <span className="summary-label">Delivery Charge</span>
-            <span className={`summary-value ${cart.deliveryCharge === 0 ? 'free' : ''}`}>
-              {cart.deliveryCharge === 0 ? 'FREE' : `₹${cart.deliveryCharge.toFixed(2)}`}
-            </span>
+            <div className="delivery-info">
+              <p className="delivery-note">
+                <span className="info-text">Standard delivery charge applies</span>
+              </p>
+            </div>
           </div>
-          
+
           {cart.discount > 0 && (
             <div className="summary-row discount">
               <span className="summary-label">Discount</span>
               <span className="summary-value">-₹{cart.discount.toFixed(2)}</span>
             </div>
           )}
-          
+
           <div className="summary-divider"></div>
-          
+
           <div className="summary-row total">
             <span className="summary-label">Total Amount</span>
             <span className="summary-value total-amount">
@@ -224,15 +226,15 @@ const Cart = () => {
         </div>
 
         <div className="cart-actions">
-          <button 
+          <button
             className="secondary-action-btn"
             onClick={() => navigate('/')}
           >
             Continue Shopping
           </button>
-          
+
           <div className="primary-actions">
-            <button 
+            <button
               className="whatsapp-order-btn"
               onClick={handleWhatsAppOrder}
               disabled={isCheckingOut}
@@ -240,8 +242,8 @@ const Cart = () => {
               <FaWhatsapp className="whatsapp-icon" />
               Order via WhatsApp
             </button>
-            
-            <button 
+
+            <button
               className="checkout-btn"
               onClick={handleCheckout}
               disabled={isCheckingOut}
@@ -265,8 +267,8 @@ const Cart = () => {
           <div className="guest-notice">
             <p className="notice-text">
               <span className="notice-icon">💡</span>
-              You're shopping as a guest. 
-              <button 
+              You're shopping as a guest.
+              <button
                 className="login-link"
                 onClick={() => navigate('/login')}
               >
