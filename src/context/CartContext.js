@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import React, { createContext, useState, useContext, useEffect, useCallback } from 'react';
 import { useAuth } from './AuthContext';
 import { cartService } from '../services/cartService';
 
@@ -26,12 +26,9 @@ export const CartProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const { isAuthenticated } = useAuth();
 
-  // Load cart on mount and when auth changes
-  useEffect(() => {
-    loadCart();
-  }, [isAuthenticated]);
 
-  const loadCart = async () => {
+
+  const loadCart = useCallback(async () => {
     if (!isAuthenticated) {
       // Load from localStorage for guest users
       const savedCart = localStorage.getItem('guest_cart');
@@ -52,7 +49,12 @@ export const CartProvider = ({ children }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [isAuthenticated]);
+
+
+  useEffect(()=>{
+    loadCart();
+  },[loadCart]);
 
   const addToCart = async (product, quantity = 1, customization = {}, specialInstructions = '') => {
     try {
