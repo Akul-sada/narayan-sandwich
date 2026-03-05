@@ -5,7 +5,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
-const connectDB = require('./config/database');
+const connectDB = require('../config/database');
 
 // Load env vars
 dotenv.config();
@@ -14,12 +14,12 @@ dotenv.config();
 connectDB();
 
 // Route files
-const authRoutes = require('./Routes/authRoutes');
-const cartRoutes = require('./Routes/cartRoutes');
-const productRoutes = require('./Routes/productRoutes');
+const authRoutes = require('../Routes/authRoutes');
+const cartRoutes = require('../Routes/cartRoutes');
+const productRoutes = require('../Routes/productRoutes');
 
 // Error middleware
-const { notFound, errorHandler } = require('./middleware/errorMiddleware');
+const { notFound, errorHandler } = require('../middleware/errorMiddleware');
 
 const app = express();
 
@@ -60,7 +60,7 @@ app.get('/api/health', (req, res) => {
 app.use(notFound);
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 
 const server = app.listen(PORT, () => {
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
