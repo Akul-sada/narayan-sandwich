@@ -23,28 +23,7 @@ const Header = () => {
             <span className="logo-icon"><img src="./logo.jpeg" alt="narayan snacks parlour logo"/></span>
           </Link>
         </div>
-
-        <nav className="nav-section">
-          <Link to="/" className="nav-link">
-            <FaHome className="nav-icon" />
-            <span className="nav-text">Menu</span>
-          </Link>
-          
-          <Link to="/cart" className="nav-link cart-link">
-            <div className="cart-wrapper">
-              <FaShoppingCart className="nav-icon" />
-              {cart.totalItems > 0 && (
-                <span className="cart-badge">{cart.totalItems}</span>
-              )}
-            </div>
-            <span className="nav-text">Cart</span>
-            {cart.totalItems > 0 && (
-              <span className="cart-total">₹{cart.grandTotal.toFixed(2)}</span>
-            )}
-          </Link>
-        </nav>
-
-        <div className="user-section">
+         <div className="user-section">
           {isAuthenticated ? (
             <div className="user-dropdown">
               <button className="user-btn">
@@ -75,6 +54,30 @@ const Header = () => {
             </Link>
           )}
         </div>
+
+        <nav className="nav-section">
+          <Link to="/" className="nav-link">
+            <FaHome className="nav-icon" />
+            <span className="nav-text">Menu</span>
+          </Link>
+          
+          <Link to="/cart" className="nav-link cart-link">
+            <div className="cart-wrapper">
+              <FaShoppingCart className="nav-icon" />
+              {cart.totalItems > 0 && (
+                <span className="cart-badge">{cart.totalItems}</span>
+              )}
+            </div>
+            <span className="nav-text">Cart</span>
+            {cart.totalItems > 0 && (
+              <span className="cart-total">₹{cart.grandTotal.toFixed(2)}</span>
+            )}
+          </Link>
+        </nav>
+
+       
+
+        
       </div>
     </header>
   );

@@ -6,7 +6,8 @@
   padding: 20px;
   max-width: 1400px;
   margin: 0 auto;
-  background-color: var(--bg-soft);
+  background-color: var(--bg-cream);
+  
 }
 
 /* Category Navigation */
@@ -164,6 +165,13 @@
 }
 
 /* Item Content */
+
+.item-name {
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+  color: var(--orange-red)!important;
+}
 .item-content {
   padding: 25px 20px;
 }

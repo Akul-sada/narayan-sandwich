@@ -3,6 +3,7 @@ import { FaShoppingCart, FaPlus, FaMinus } from 'react-icons/fa';
 import { useCart } from '../../context/CartContext';
 import menuData from './menuData.json';  
 import './MenuDisplay.css';
+import '../../styleTheme/theme.css';
 
 const MenuDisplay = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -76,7 +77,7 @@ const MenuDisplay = () => {
           <div key={item.id} className="menu-item">
             {/* ... rest of your JSX (image, name, price, quantity selector, add to cart) */}
             <div className="item-content">
-              <h3>{item.type}</h3>
+              <h3 className='item-name'>{item.type}</h3>
               <p className="item-price">₹{item.price}</p>
               <div className="item-actions">
                 <div className="quantity-selector">
