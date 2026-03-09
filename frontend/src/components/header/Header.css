@@ -1,12 +1,13 @@
 /* Header Component Styles */
 
 .app-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--orange-gradient);
   color: white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px var(--shadow-orange);
+  box-shadow: 0 4px 15px var(--shadow-orange);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1000;    
   padding: 15px 0;
 }
 
@@ -34,9 +35,7 @@
   transition: all 0.3s ease;
 }
 .logo img{
-  width: 10rem;
-  height:10rem;
-
+  max-width: 7rem;
 }
 
 .logo:hover {
@@ -98,7 +97,7 @@
   position: absolute;
   top: -8px;
   right: -8px;
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  background: var(--orange-gradient);
   color: white;
   font-size: 0.75em;
   font-weight: 700;
@@ -268,6 +267,89 @@
 
 .login-text {
   font-size: 1.1em;
+}
+@media (max-width: 340px) {
+  .app-header {
+    padding: 6px 0;
+  }
+  
+  .header-container {
+    padding: 0 10px;
+    gap: 8px;
+  }
+  
+  .logo img {
+    max-width: 3.5rem;
+  }
+  
+  .login-btn {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+  
+  .login-icon {
+    font-size: 0.9em;
+  }
+  
+  .login-text {
+    font-size: 0.8em;
+  }
+  
+  .user-btn {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+  
+  .user-icon {
+    font-size: 0.9em;
+  }
+  
+  .user-name {
+    display: none; /* Hide name on very small screens */
+  }
+}
+
+/* Small screens and tablets */
+@media (max-width: 770px) and (min-width: 341px) {
+  .app-header {
+    padding: 8px 0;
+  }
+  
+  .header-container {
+    padding: 0 15px;
+    gap: 10px;
+  }
+  
+  .logo img {
+    max-width: 5rem;
+  }
+  
+  .login-btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+  
+  .login-icon {
+    font-size: 1em;
+  }
+  
+  .login-text {
+    font-size: 0.9em;
+  }
+  
+  .user-btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+  
+  .user-icon {
+    font-size: 1em;
+  }
+  
+  .user-name {
+    font-size: 0.9em;
+    max-width: 80px;
+  }
 }
 
 /* Mobile Responsive */

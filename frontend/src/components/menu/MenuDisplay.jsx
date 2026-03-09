@@ -85,7 +85,7 @@ const MenuDisplay = () => {
                   <button onClick={() => handleQuantityChange(item.id, 1)}><FaPlus /></button>
                 </div>
                 <button onClick={() => handleAddToCart(item)}>
-                 <FaShoppingCart />
+                 <FaShoppingCart className="cart-icon" />
                 </button>
               </div>
             </div>

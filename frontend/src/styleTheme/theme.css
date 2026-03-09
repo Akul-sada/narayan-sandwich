@@ -1,0 +1,17 @@
+/* CSS Variables for Orange Theme */
+:root {
+  --orange-primary: #ff8c42;
+  --orange-light: #ffb07c;
+  --orange-soft: #fff0e6;
+  --orange-pale: #fff5eb;
+  --orange-dark: #e67e22;
+  --orange-gradient: linear-gradient(135deg, #f7a06a 0%, #f77f53 100%);
+  --orange-gradient-light: linear-gradient(135deg, #ffb07c 0%, #ff8c42 100%);
+  
+  --text-dark: #2d3748;
+  --text-light: #718096;
+  --bg-white: #ffffff;
+  --bg-soft: #fff9f5;
+  --border-light: #ffe4d6;
+  --shadow-orange: rgba(255, 140, 66, 0.2);
+}
